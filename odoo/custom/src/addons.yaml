@@ -1,0 +1,35 @@
+connector-ecommerce:
+    - connector_ecommerce
+connector:
+    - connector
+    - connector_base_product
+connector-prestashop:
+    - connector_prestashop
+    - connector_prestashop_catalog_manager
+partner-contact:
+    - base_location
+    - base_location_geonames_import
+product-attribute:
+    - product_m2mcategories
+    - product_multi_image
+    - product_sequence
+    - product_brand
+product-variant:
+    - product_variant_cost_price
+    - product_variant_supplierinfo
+reporting-engine:
+    - report_xls
+sale-workflow:
+    - sale_automatic_workflow
+    - sale_exceptions
+    # We use private/sale_payment_method instead
+    # TODO Use OCA version with PR for v9
+    # - sale_payment_method
+    - sale_payment_method_automatic_workflow
+server-tools:
+    - base_multi_image
+    - cron_run_manually
+    - database_cleanup
+    - disable_openerp_online
+    - mass_editing
+    - shell
