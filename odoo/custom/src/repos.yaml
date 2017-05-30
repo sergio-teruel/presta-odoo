@@ -36,7 +36,6 @@
         oca $ODOO_VERSION
     merges:
         - oca $ODOO_VERSION
-        - oca 9.0
 
 ./connector-prestashop:
     defaults:
