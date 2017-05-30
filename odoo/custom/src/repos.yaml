@@ -19,10 +19,12 @@
         depth: $DEPTH_DEFAULT
     remotes:
         oca: https://github.com/OCA/connector-ecommerce.git
+        tecnativa: https://github.com/tecnativa/connector-ecommerce.git
     target:
         oca $ODOO_VERSION
     merges:
         - oca $ODOO_VERSION
+        - tecnativa 10.0-mig-connector_ecommerce
 
 ./connector:
     defaults:
@@ -112,6 +114,16 @@
         depth: $DEPTH_DEFAULT
     remotes:
         oca: https://github.com/OCA/queue.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./product-variant:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/product-variant.git
     target:
         oca $ODOO_VERSION
     merges:

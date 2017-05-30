@@ -15,7 +15,7 @@ product-attribute:
     - product_sequence
     - product_brand
 product-variant:
-    - product_variant_cost_price
+#    - product_variant_cost_price
     - product_variant_supplierinfo
 reporting-engine:
     - report_xls
