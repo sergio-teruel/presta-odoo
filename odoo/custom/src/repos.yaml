@@ -99,6 +99,7 @@
         oca $ODOO_VERSION
     merges:
         - oca $ODOO_VERSION
+        - oca refs/pull/201/head
 
 ./server-tools:
     defaults:
@@ -125,6 +126,16 @@
         depth: $DEPTH_DEFAULT
     remotes:
         oca: https://github.com/OCA/product-variant.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION
+
+./bank-payment:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/bank-payment.git
     target:
         oca $ODOO_VERSION
     merges:
