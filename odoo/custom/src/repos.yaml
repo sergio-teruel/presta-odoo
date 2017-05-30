@@ -106,3 +106,13 @@
         oca $ODOO_VERSION
     merges:
         - oca $ODOO_VERSION
+
+./queue:
+    defaults:
+        depth: $DEPTH_DEFAULT
+    remotes:
+        oca: https://github.com/OCA/queue.git
+    target:
+        oca $ODOO_VERSION
+    merges:
+        - oca $ODOO_VERSION

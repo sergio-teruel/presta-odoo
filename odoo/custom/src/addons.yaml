@@ -33,3 +33,5 @@ server-tools:
     - disable_openerp_online
     - mass_editing
     - shell
+queue:
+    - queue_job
